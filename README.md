@@ -35,13 +35,42 @@ Explain how each technology has contributed to the development of the internet.
 
 #### packets
 
+These are blocks of information that are sent and received between multiple sites.
+they carry information regarding style, layout and any information that you are
+viewing.
 
+Packets allow the data creators use to style and format websites the be broken down and reassembled
+making loading a website more managable 
 
 #### IP adresses (IPv4 & IPv6)
 
+IP stands for Internet Protocol and are the unique address' that your device has, 
+similar to a mailing address at a house, it's used to identify where to send data there 
+are 2 different types.
+
+the IPv4 is a series of 32 binary bits that create a code, four digits separated with dot points
+for example 0.1.2.3 
+
+IPv4 was implemented first but with the rapid expansion of the internet in the late 90s and 2000 
+was expanded due to concerns that there would be enough IPv4 addresses. IPv6 uses 128 binary bits 
+and is represented by 8 groups of 4 separated with dashes. For example 2001:0db8:0000:0000:0000:8a2e:0370:7334
+
 #### routers
 
-#### domain name server
+Routing is the process of finding the most efficient way for information to be sent and recieved 
+between two sources, like a browser viewing a website; the information is recieved in packets 
+and assembled again.
+
+Routers are the networking device that connects to the internet and directs the data between 
+computer networks. Routers have developed a lot over the life of the internet allowing connections 
+to faster infrastructure and even allowing wireless connections as well 
+
+#### DNS
+
+Domain name systems are a protocol that dictates how computers networks exchange data and converts domain names 
+in to IP addresses. 
+
+Devices use DNS servers to look up the domain name that they are trying to connect to 
 
 ----------------------------------------------------------------------------------------------------------------------
 
