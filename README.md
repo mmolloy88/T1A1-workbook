@@ -85,9 +85,34 @@ Explain how each technology has contributed to the development of client and ser
 
 #### TCP
 
+Transmission control protocol establishes and controls the link between 2 computer networks. This protocol manages flow
+control, dictating how the packets can be securely sent and  are reassembled for the client in the form of a 
+website or document.
+
+TCP is the  is one the key components of the internet as it establishes the standard order in which information
+is securely transported between the consumer and the service or site they are trying to access 
+
 #### HTTP & HTTPS
 
+Hypertext transfer protocol and it's secure extension are the convention in which messages and information are sent 
+as well as the format that this information takes. If there is no information at the requested source, like a file
+does not exist or the URL is misspelled then this protocol will return an error, usually in the form of "404 Page 
+not found".
+
+HTTPS is an updated, more secure version of this. in 1999, the World Wide Web Consortium documented the issues with
+the then current transfer protocols and by 2014 Google HTTPS to be a ranking factor for how sites were listed on
+their search engine.
+
 #### web browser
+
+This is an application that is utilised to access the internet, there primary role is to render HTML. To do this 
+the computer network requests data from another IP address, the packets are then sent. A process called the 
+Critical Rendering Path is then used to show the HTML then the CSS in the browser.
+
+Browsers also include tools that allow the user to view the underlying code. In a browser such as Google Chrome, 
+the information can be viewed and manipulated on the users browser allowing them to make temporary changes 
+without affecting the website. This can also be used to see how a website reacts under different conditions, 
+like a mobile device screen.
 
 ----------------------------------------------------------------------------------------------------------------------
 
@@ -95,19 +120,48 @@ Explain how each technology has contributed to the development of client and ser
 
 ### data types 
 
-The three major types that are utilized are Integers (numbers), Stings (letters and words) and Boolean (true or false). 
+The three major data structures that are utilized are classes, Arrays and hashes. 
 
-#### Integers
+#### Class - "class.new"
 
-#### Strings
+Classes are a customer data structure type. These can be used to assign value as well as create objects,
+classes are defined with a keyword followed by the class name and then assigned attributes.
 
-#### Boolean
+The class data type is mainly used to create a custom object to work with.
+
+#### Array "[]"
+
+Arrays allow you to store multiple values in a variable as well as represent a list of values. These values
+are called elements, these elements can be called individually from the array or the whole array can be returned. 
+
+An array is used as a container for many kinds of object or data types, like intergers or strings 
+
+#### Hashes "{}"
+
+similarly to arrays, hashes are used to store multiple values, but these values are given keys. The keys can be 
+used to access the data, like the class name is used to access the attributes assigned to it. 
+
+Hashes are used to convert a key in to an interger of limited range
 
 ----------------------------------------------------------------------------------------------------------------------
 
 5. Describe the features of interpreters and compilers and how they are different.
 
 #### interpreters and compilers
+
+compiler:
+A compiler is a program that converts high level code in to machine code. This is process takes the human readable
+code, like the information used to create a program in Ruby and changes it in to binary, the computer then 
+processes the corresponding task. Because the compiler has already translated in to machine code it takes less
+time to run the executable file. 
+
+interpreter:
+an interpreter is a program that utilises source code, pre-compiled code and script to convert each high level
+programming statement into machine code, it is easier to utilise as it shows the user when an error occurs.
+
+Where a compiler will anaylise each each statement, then continue processing if there are no errors, link the exe
+files then run the program. An interpreter will run the executable file without linking files and the program is
+then run line by line when it's executed.
 
 ----------------------------------------------------------------------------------------------------------------------
 
