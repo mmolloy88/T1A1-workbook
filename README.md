@@ -169,6 +169,43 @@ then run line by line when it's executed.
 
 #### languages
 
+Python:
+this is a high level coding language, meaning that it uses more generalised, understandable terms in order to 
+create programs. Python was designed in 1990 by Guido Van Rossum with an emphasis on making readable code and is
+an object oriented language.
+
+Python revolves around 5 core ideas:
+
+"Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Readability counts."
+
+As stated in the Zen of Python, a document written by Tim Peters. This also outlines the benefits of Python,
+it allows the user to write code that is readable, simplistic, is easily explainable and looks good, It is 
+also an open source program, meaning it is free and has a very active community around it.
+
+However, this language is slower than some other programming languages and depends on third party framework meaning,
+that if the user wants to user certain tools in the program, they need to install another program. Additionally
+Python isn't developed for mobile computing, although it can be used for this purpose this also requires addition plugins.
+
+
+Ruby:
+Developed in 1995 by Yukihiro "Matz" Matsumoto, another high level language that supports procedural, object-oriented and 
+functional programming. Designed around a philosophy of productivity and fun, it is more generalised and can be used to 
+create myriad of programs and applications. With addition of Rails, Ruby is also mainly used as a platform for developing web 
+applications.
+
+Also being a open source program, Ruby is easily accessible and has an active community to support it's users, however this 
+base is not as big as Pythons. Where it excels are blocks of existing code called Gems are developed and stored in online 
+repositories, like Github or rubygems.org making it easy for users to access and implement these Gems in to their own code.
+
+Being a flexible language means that debugging can be difficult to perform. With the online repositories, documentation for
+Gems can be lacking and similarly to Python the boot and runtime speeds are slow. 
+
+
+
 ----------------------------------------------------------------------------------------------------------------------
 
 7. Identify TWO ethical issues from the areas below and discuss the extent to which an IT professional is ethically 
