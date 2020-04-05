@@ -268,6 +268,54 @@ law is helpful in assisting a developer to act in an ethical way.
 
 #### ethics
 
+personal information
+
+with the growing popularity of the internet as well as the utilization of online resources for social media, 
+companies such as google and facebook have been called out in regards to their practices regarding personal
+information and how they handle such sensitive information. On a more subjective level, a developer should
+ask what they are what they are building as well as who it's for, how vulnarable it is to corruption and if it's
+making a positive impact. If some personal information has been stored, is it secure, incripted, who is it
+visible to. 
+
+From a legal standpoint in Australia, how a person or company should handle personal information is outlined in
+Privacy Act 1988, this document states how personal information should be obtained, stored and how people
+can "interact with a site using pseudonymity, like a username or email that doesn't contain their name."
+
+cited -https://www.insideinfo.com.au/business-intelligence-and-analytics/ethics-data-gathering-what-should-australian-businesses-know
+
+
+GPS & metadata
+
+As described in the Surveillence Sevices Act 2007 64, it is not legal to track and record GPS data for any reason,
+however with recent changes to legislation is legal for the government to access metadata - Telecommunications 
+(Interception and Access) Amendment (Data Retention) Act 2015. Metadata refers to information regarding
+resource description, preservation and retention, managing users, ownership and rights managment.
+
+Herein lies an ethical issue, where it may be legal to store certain information, given the instability and dynamic
+landscape of IT and web development, it's not always the right thing to do. If we are creating a program that
+requires personal information then the security of that information needs to be a major priority. On the other 
+side of the coin, metadata can also be useful for people who want to hold ownership of the media they have made,
+whether that is an image, video or website ect. 
+
+#### case study
+
+September 2018, Facebook users person information including "name, gender and hometowns" was compromised by 
+hackers using Facebook developer Application Programming Interfaces (APIs). It was reported that more than 50
+million users information was accessed, however it did not appear that user credit card information was accessed.
+The program used to gain access Facebook was introduced in 2017, a year prior to the hack. As a result the 
+company was fined $5 billion US and Mark Zuckerberg appeared before congress and was pressured to stand down or
+relinquish partial control of his company.
+
+This was a breach on a grand scale, which impacted how the company reviews its operation and caused the developers 
+to review all of potentially effected user log ins, facebook updated it's user agreements. The entire aftermath of 
+these events have not been well documented, however it did effect companies associated with Facebook like 
+Whatsapp and Instagram. Additionally confidence in the company would have been effected, from the perspactive
+of users, peers and investors the fallout from this event will have repercussions for the foreseeable future
+
+From this situation it is easy to see how vigilance is key to the upkeep of a program, that sometimes it is a
+prudent move to review your program. In terms of future steps, additional security such as 2 factor 
+authentication as well as additional incription from user information should be implemented.
+
 ----------------------------------------------------------------------------------------------------------------------
 
 8. Explain control flow, using an example from the Ruby programming language
@@ -386,6 +434,12 @@ puts i
     arr[i + 1] = arr[i]
 ```
 
+#### solution
+
+arr = [5, 22, 29, 39, 19, 51, 78, 96, 84]
+puts arr.sort
+
+
 ----------------------------------------------------------------------------------------------------------------------
 
 14. Demonstrate your algorithmic thinking through completing the following two tasks, in order:
@@ -394,7 +448,21 @@ Your flowchart should make use of standard conventions for flowcharts to indicat
 tasks, actions, or operations
  2. Write pseudocode for the process outlined in your flowchart
 
+start a1gorithm
 
+1 is not a prime number, start with 2, 
+
+counting intergers(i) 
+
+use modulo operator to calculate whether 'i' divided by 2 leaves a remainder
+
+if the number has a remainder it is prime and is stored
+
+if the number doesn't have a remainder it isn't stored
+
+is the number > 100? if false, cycle back to count, add 1 to i
+
+is the number > 100? if true, end.
 
 ----------------------------------------------------------------------------------------------------------------------
 
@@ -405,6 +473,11 @@ if it is less than 15 but not raining print “It’s not raining but cold”. I
 than or equal to 15 but not raining print “It’s warm but not raining”, and otherwise tell them 
 “It’s warm and raining”.
 
+#### Pseudocode
+
+ write out a value for both temperature as well as a true or false value for if it's raining. define a method
+ that runs through some if/elsif/else responses to both the temperature and rain using 'and'. then return the 
+ value and puts out the response.
 
 
 ----------------------------------------------------------------------------------------------------------------------
@@ -426,4 +499,32 @@ So if Tom is allergic to peanuts and chocolate, he gets a score of 34.
 Write a program that, given a person’s score can tell them:
  a) whether or not they’re allergic to a given item
  b) the full list of allergies.
+
+
+
+def allergy(allergen)
+        scores = {
+            :eggs  => 1,
+            :peanuts  => 2,
+            :shellfish  => 4,
+            :strawberries  => 8,
+            :tomatoes  => 16,
+            :chocolate  => 32,
+            :pollen  => 64,
+            :cats  => 128
+        }
+        total_score = 0
+        for tests in allergy
+            if scores.has_key?(tests)
+                total_score = total_score + scores[tests]
+            end
+        end
+    return total_score
+end
+
+
+scores.each do |key, value|
+    puts "#{key} => #{value}"
+end
+
 
