@@ -2,23 +2,65 @@
 Workbook T1A1:
 
 
-
 1. Research the development of the internet from 1980 to today. 
 You must describe at least FIVE key events in the development of the internet.
 
 ### A brief history of the Internet
 
+Prior to the World Wide Web that dominates the way we keep in touch, computers were sometimes used to
+share packets of information over networks. The National Physics Laboratory in the United Kingdom were
+a host for this concept in 1970, Advances Research Agency Network, the Merit network and CYCLADES 
+were all early adopters and hosts for packet switching networks. 
+
 #### foundation circa  1990
 
+Utilizing the concepts of hypertext and packet switching, Tim Berners-Lee, a fellow at CERN at the time,
+submitted a 20 page memo outlining the struggles of keeping track of large projects. His solution was to 
+save the information needed on to a hypertext server that was accessible by multiple client brower programs 
+and the information from one server could refer to the data on another.
+
+With the concept successfully implemented, the first website was developed and launched in 1991. 
 
 #### design meets function with CSS 1994
 
+With the development of the World Wide Web, Tim Berners-Lee had included a simple style sheet in his web
+browser - neXT. Several years later another browser called "Viola" was developed by Pei Wei, this included
+it's own style sheet, several browser were developed over the following years but issues arose when browsers
+dictated how the webpage should be displayed and writers had little to no control over how the page would 
+appear in a browser.
+
+in October 1994, Hakon Wium Lie, a colleague of Berners-lee, released his first draft of what would become
+the Cascading Style Sheet. CSS allows the author to present a website in a style they choose, including fonts
+colours. over the years, this has been expanded to include placement of certain assets and multimedia.
 
 #### leading to search engines 1994
 
-#### online shopping 1995
+Accompanying the foundation of both function, with HTML and form in CSS, there came a raise in accessibilty
+and popularity of the internet there came the search engine, a platform for users to find the content they 
+were looking for without knowing the specific DNS. starting with directories like Archie and Gopher in the 
+early 90s, search engines didn't hit their stride until sites like Infoseek, Altavista, Webcrawler and Yahoo!
+let users easily connect with the information they were looking for.
 
-#### and social media
+The search engine would continue to evolve introducing Google founded by Larry page and Sergey Brin which was 
+based around an algorithm that ranks a site based on the amount of "back-links" a page had.
+
+#### Online shopping
+
+Using a network to buy good was not a new concept, originating in 1979 when Michael Aldrich developed a system in which 
+domestic phone calls to be connected to a modified computer network that allowed the user to input payment details called 
+teletext. This concept grew with the internet, business like Amazon and eBay founded in 1994 and 1995 respectively found a 
+foothold and allowed to retailers to sell and ship their goods. 
+
+#### Social media
+
+social media started with sites like sixdegrees and personal blogs, allowing people to share their experiences and
+thoughts and "friend" each other, this concept evolved over the thoughout the late 90s. With sites like 
+Facebook and Myspace starting with small bases; initially Mark Zuckerburg limited Facebook to be used by his Harvard
+cohorts in 2004, but these sites grew to be utilised by millions of users. 
+
+Nowadays social media is also host for media, news and has also come to include online shopping as well as 
+a marketplace for people to by and sell used goods.
+
 
 ----------------------------------------------------------------------------------------------------------------------
 
@@ -232,15 +274,53 @@ law is helpful in assisting a developer to act in an ethical way.
 
 #### control flow
 
+This is the order in which a section of code; individual statement, function or instruction is executed.
+In terms of the Ruby language this can be broken down in to the use of loops like the if, else/if or elsif 
+statements, for example:
+
+    if a = b
+        puts "yes"
+    elsif a != b
+        puts "no"
+    else 
+        puts "what are letters?"
+    end
+
+in this example the code will check if "a" and "b" have equal value and return a response based on that, 
+otherwise the terminal should show the phrase "what are letters?"
+
 ----------------------------------------------------------------------------------------------------------------------
 
 9. Explain type coercion
 
 #### type coercion
 
+This is the conversion of on data type to another, for instance translating an integer in to a float.
+In terms of Ruby this is usually represented through the ".to_" line, commonly used to convert a value
+to a string with ".to_s", an integer with ".to_i" or to a float with ".to_f".
+
+    10.0.to_i
+
+for instance this will convert the float number "10.0" to "10", as float values have a dot point whereas
+integers are representitive of whole numbers.
+
 ----------------------------------------------------------------------------------------------------------------------
 
 10. Explain data types, using examples
+
+#### data types
+
+the three core data types utilised in Ruby are numbers, strings and boolean value. each of these represent a
+different way of entering and storing data
+
+numbers can be integers or floats - 1234 or 1.234
+
+strings are words or phrases identified with the use of quotation marks - "this is a" 'string'
+
+and boolean is a true or false value - true || false
+
+Along with these core data types, there are also symbols, arrays and hashes which are all used as containers to 
+keep data inside. 
 
 ----------------------------------------------------------------------------------------------------------------------
 
@@ -249,6 +329,13 @@ The customers want to be able to buy food of their choice. All the staff just qu
 how can you build an app to replace them?”
  - Identify the classes you would use to solve the problem
  - Write a short explanation of why you would use the classes you have identified
+
+ #### auto restaurant
+
+To create an application to replace the staff I would create calsses for food type, either the main ingredient
+or style - like pasta, salad, steak. Additionally I would add attributes for the other ingredients in the dish and 
+finally an attribute for the price of each dish. This would allow the customer to see what they are ordering, if
+they wanted to avoid certain foods if they need to as well as see how much the customer was spending on their order. 
 
 ----------------------------------------------------------------------------------------------------------------------
 
@@ -261,6 +348,28 @@ print "The result is: "
 print fahrenheit
 puts "."
 ```
+
+#### solution
+
+to solve the issues with this code, they are not asking for input from the user, the method is not being defined, 
+so it won't return anything and the result is being split in to 3 separate lines, this should be put together as
+1 response. The solution i came up with is:
+
+        def c_to_f(temp)
+            return temp*1.8 + 32
+        end
+
+        def get_word(prompt_text)
+            p prompt_text
+            return gets.chomp
+        end
+
+        temperature=get_word("please enter the temperature: ").to_i
+
+        puts "#{c_to_f(temperature)} degrees fahrenheit!"
+
+to get the response from the user, then change that response to farenheit with the equation and return that 
+response in farenheit.
 
 ----------------------------------------------------------------------------------------------------------------------
 
@@ -285,6 +394,8 @@ Your flowchart should make use of standard conventions for flowcharts to indicat
 tasks, actions, or operations
  2. Write pseudocode for the process outlined in your flowchart
 
+
+
 ----------------------------------------------------------------------------------------------------------------------
 
 15. Write pseudocode OR Ruby code for the following problem:
@@ -293,6 +404,8 @@ temperature is less than 15 degrees, print to the screen “It’s wet and cold�
 if it is less than 15 but not raining print “It’s not raining but cold”. If it’s greater 
 than or equal to 15 but not raining print “It’s warm but not raining”, and otherwise tell them 
 “It’s warm and raining”.
+
+
 
 ----------------------------------------------------------------------------------------------------------------------
 
@@ -313,3 +426,4 @@ So if Tom is allergic to peanuts and chocolate, he gets a score of 34.
 Write a program that, given a person’s score can tell them:
  a) whether or not they’re allergic to a given item
  b) the full list of allergies.
+
